@@ -1,0 +1,4 @@
+app/code/local/Qbixx/DisableRegistration/etc/config.xml app/code/local/Qbixx/DisableRegistration/etc/config.xml
+app/code/local/Qbixx/DisableRegistration/Helper/Data.php app/code/local/Qbixx/DisableRegistration/Helper/Data.php
+app/code/local/Qbixx/DisableRegistration/Model/Observer.php app/code/local/Qbixx/DisableRegistration/Model/Observer.php
+app/etc/modules/Qbixx_DisableRegistration.xml app/etc/modules/Qbixx_DisableRegistration.xml
