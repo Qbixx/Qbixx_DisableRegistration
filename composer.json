@@ -2,5 +2,12 @@
     "name": "qbixx/qbixx_disable_registration",
     "description": "Magento module to disable customer registration through the disallowRegistration method",
     "type": "magento-module",
-    "license": ["OSL-3.0", "AFL-3.0"]
+    "license": "OSL-3.0",
+    "authors": [{
+      "name": "Jorg Aldenhuijsen",
+      "email": "info@qbixx.nl"
+      }],
+    "require": {
+      "magento-hackathon/magento-composer-installer": "*"
+    }
 }
