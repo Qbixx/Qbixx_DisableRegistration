@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Qbixx_DisableRegistration>
+      <version>0.1.0</version>
+    </Qbixx_DisableRegistration>
+  </modules>
+  <global>
+    <helpers>
+      <disableregistration>
+        <class>Qbixx_DisableRegistration_Helper</class>
+      </disableregistration>
+    </helpers>
+	<models>
+	  <disableregistration>
+		<class>Qbixx_DisableRegistration_Model</class>
+		<resourceModel>disableregistration_mysql4</resourceModel>
+	  </disableregistration>
+	</models>
+    <events>
+	  <customer_registration_is_allowed> <!-- identifier of the event we want to catch -->
+        <observers>
+          <customer_registration_is_allowed_handler> <!-- identifier of the event handler -->
+            <type>model</type> <!-- class method call type; valid are model, object and singleton -->
+            <class>disableregistration/observer</class> <!-- observers class alias -->
+            <method>disallowRegistration</method>  <!-- observer's method to be called -->
+            <args></args> <!-- additional arguments passed to observer -->
+          </customer_registration_is_allowed_handler>
+        </observers>
+      </customer_registration_is_allowed>
+    </events>
+  </global>
+</config> 
