@@ -1,0 +1,6 @@
+{
+    "name": "qbixx/qbixx_disableregistration",
+    "description": "Magento module to disable customer registration through the disallowRegistration method",
+    "type": "magento-module",
+    "license": ["OSL-3.0", "AFL-3.0"]
+}
